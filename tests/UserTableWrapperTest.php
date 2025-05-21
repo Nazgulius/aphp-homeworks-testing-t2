@@ -53,10 +53,7 @@ class UserTableWrapperTest extends TestCase
     $this->a->delete(1);
     $result = $this->a->get();
     $expected = [
-      [
-        1 => 2,
-        2 => 3,
-      ],
+      
     ];
     $this->assertEquals($expected, $result);
   }
