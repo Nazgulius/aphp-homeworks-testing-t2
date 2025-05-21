@@ -54,12 +54,10 @@ class UserTableWrapperTest extends TestCase
     $result = $this->a->get();
     $expected = [
       [
-        1 => 1,
-        2 => 2,
-        3 => 3,
+        1 => 2,
+        2 => 3,
       ],
     ];
-    // Обратите внимание, что удаление первой записи сместит остальные
     $this->assertEquals($expected, $result);
   }
 }
